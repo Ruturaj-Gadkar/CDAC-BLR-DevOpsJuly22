@@ -1,0 +1,138 @@
+DevOps?
+DevOps: Development + Operations.
+DevOps is a collaboration b/w the Dev team and the IT operations team to make the Software production and deployment in a automated and repeated manner. It helps in making the Company's speed to deliver the software and its services to the customers. It is a combination of 2 words: Dev and Operations. 
+DevOps allow organizations to serve their customers better and complete the process in a much faster manner. 
+
+What is Development?
+The Work done on Requirement Gathering, Design, Unit Testing, Coding and building is the part of the Development Process. The Developers, Team Lead and the Manager are the part of the Development process. 
+
+What is Operations?
+Automation Testing, Application Evaluation, Integrations and deployment is the part of the Operations. The Operations team will also have UAT Member(User Acceptance Test) who acknowledges the process and the Application execution. He/She will ensure that the Application is meeting the required expections of the Customer. 
+
+How Application is deployed in Real Time Environment?
+Design Analysis will be done in consulation with the Customer, UAT member and the Product Owner. 
+Once the SDD(Software Design Doc) is ready and approved by the Customer, then Sprint plan happens.
+Here team will divide the Complete Application into tasks and Subtasks and asserts the Time line for the Completion of the project. 
+Complex phases within the Application are divided into tasks and will be made as Sprints. Each Sprint contains a timeline for a group of tasks to be completed. It will be 2 weeks to 3 weeks.  These tasks will be allocated to the Developers and points will be created. 
+Once the Sprints starts, Dev Team will coordinate with the Operations team and try to set the environment suited to deploy. Tools like Git, Jenkins, Dockers come into picture.
+With the sprint cycle, the team will create the code, test it, build it and verify it before placing it into a build cycle. 
+The Build Cycle invokes pushing the code to a central repo like Git/BitBucket/TFS. Jenkins, a Building tool will pull the code from the Git as and when the changes are made and starts building the Application E2E in the production Environment. If any issues, Jenkins build will fail and notifies all the stack holders thru email. The Developer has to rework on the tasks and finally get it built successfully.
+Once the complete sprints are completed, the Code will be built successfully and deployed into the Production Environment and UAT Process begins. 
+Once the UAT is completed, the project is closed after a Closure report is sent from the Customer to the Organization.  
+  
+Steps taken before the code is pushed to the Repository:
+Class Design
+Unit Test cases are developed. 
+Code is developed to satisfy the test cases. 
+PCR(Personal/Internal Code Review) is completed. 
+TL Code Review happens. 
+Code is pushed into Repo. 
+Demo to be shown to all the stake holders. 
+    
+Why DevOps?
+Before DevOps, Dev and Operations team worked in complete Isolation. 
+Testing and Deployment were isolated activities done after the Designing and Development. With this, it consumed more time than the regular build cycles. 
+Manual Code deployment lead to lot of human errors in the production environment. 
+With DevOps, Software delivery is fast and easy and it also increases the deployment easiness. Many organizations have moved to DevOps and with it, the software deployment speed has increased by 20% of the total Application delivery.
+ 
+What are benifits of DevOps?
+Predictability: The Dev Team and the IT Team will work in collaboration, any software that is developed will go thru a cycle of events under the supervision of the DevOps Team. Any failures will be noted before it is actually deployed in the production environment. We are aware about the issues and can be resolved at the time so that the deploment will be smooth.  This gives a very low failure rates compared to other deployment methodologies. 
+Reproducability: With DevOps, we can version everything before it is deployed. If any issue happens, we can revert back to the most stable version and make it work without any show-stoppers. 
+Maintainability: Any Code developed using the DevOps methodologies is easy to maintain with lots of tools available in the industry. To store the code, we use Git, to build the application from the git we have Jenkins, to place it in a proper environment, we have dockers and maintain these dockers in large scale containers like Kubernetes. From the Development to the deployment, everything could be automated and handled without a manual need of any stack holders.
+
+When do U go for DevOps?
+DevOps should be used for large Distributed Computing Apps like ECommerce sites and Apps hosted on Cloud platforms. DevOps are also suited for Agile Development Methodology. In these cases, the Changes are expected to be very frequent(Once in 2 weeks) and the build process has to be automated. 
+
+DevOps PipeLine:
+DevOps pipline is a set of automated processes and tools that allow developers and operations professionals to collaborate on building and deploying code to a production Environment. 
+DevOps uses Continuous LifeCycle:
+Plan -> Code -> Build -> Test -> Release -> Deploy -> Operate -> Monitoring.
+
+Differences b/w Agile and DevOps:
+Agile is more on addressing the gaps in the Customer and Developer Communications. 
+DevOps is on addressing the gaps b/w the Developer and the IT Operations team. 
+Agile is a Development methodology for building a Successful Application. DevOps is more on a successfull Deployment and Operations. 
+
+DevOps Engineer: A Guy who works with Software developers, System Engineers, Testing Team and other IT Staff to do the appropriate time bound releases. He should have both machine skills(Hardware) as well as Software Skills to do the coordination and collaboration. He will work with the Dev Team to takle coding, scripting needed to connect various channels of the code like libraries(Version compatibility and Vernerabilities), Services, SDKs and the Versions of the OSs on which UR App will be running. 
+He also interacts with the hardware team to understand the hardware configs required for the App to work in a network, standalone or a cloud environment. He also coordinates with the Cloud Teams to get the required services to make UR Application run. 
+
+DevOps Automation Tools:
+Config management: Chef  for achieving Speed, Scalability and consistency
+Infrastructure: AWS or Azure(Clould Environment). 
+Deployment Automation Tools: Jenkins that is used for continuous integration and testing. 
+Log Management: Log4J  or Splunk that solves issues like storing, analytics and logging of any isssues. 
+Environment: Docker. 
+
+Understand: Docker, Jenkins, Kubernetes, Yaml and Microservices. 
+
+Docker: Is a centralized platform for packaging, deploying and running of the Applications.  It is a Software platform that makes UR process of building, running, managing and distributing Applicatoins in  a simpler manner. It can virtualize the OS of the Computer on which it  is installed and running. 
+It will reduce the requirement of a heavy infrastructure resourcess for development and production Environment. The Application will be placed inside a [CONTAINER] that has all the hardware and software resources required for the succesfull execution of the application. It makes the deployment process more cost-effective. 
+
+What are Containers?
+Containers are blocks within the Docker Environment that holds an Executable Application inside it. 
+
+How does Docker work?
+Dockers use Containers on the HOST's OS to run the Apps. It will create a Linux kernel on the existing OS and make the Applications run on virtualized Environment.  Docker is an alternative to VMs. Docker allow the developers to pack the Applicatoin and ship it into a single package where the required infrastructure(Hardware and Software) will be taken from the resources available either from the host OS or the Clould Environment and it will generate the required storage and the space for the application to run. 
+
+What are VMs? VMs are virtual Machines that share the kernel of the host machine and also the memory of the host machine and create a Virtual environment where U can install an OS or a required App platform. 
+
+How Docker Containers are different from VMs?
+Unlike VMs, Containers use the same kernel of the host environment but VMs use independent OS Kernels. With VMs, U can get a Complete OS with U and U can create, build and execute Apps inside that OS. But in Docker Container, it will have the required infrastructure only to run UR App, U cannot run any other App within it. Eventually this container is purely for executing UR App. 
+ Docker Containers are more adaptable to any kind of OS as it is based on Linux Kernel. 
+ 
+ Steps to make UR Application to be placed inside a Docker. 
+ 1. Install the Docker App in UR machine
+ 
+Command to install and run centos in Docker.  
+ docker run -it centos /bin/bash
+ 
+ Some of the Commands to try:
+ docker ps -a : Lists all the Containers in UR machine. 
+ 
+ Commands to install Mongo in the Docker:
+ docker run -it mongo /bin/bash
+ 
+Use this command to connect to mongo:  mongo 172.17.0.2:27017
+Start using  Mongo Commands from the terminal
+ 
+ Docker containers are self contained units with bare minimal support for creating an Environment to make an App run. With containers, there are little chance of app failures. 
+U can create UR own containers and allow it to be deployed into a Docker as an Image and can be executed by UR Customers. Usually Docker containers will contain microservices(SpringBoot RESTFull Services) and will be consumed by various Web UI Apps like Angular, React, jQuery-HTML-CSS in the form of AJAX Service calls. 
+
+Create a new Dir called SampleJavaApp.
+Create the required Java file that contains UR code to execute. 
+Create a Docker file with instructions written using a programming language like YAML. (Code is shared). 
+Build the docker Image by running a command: docker build -t java-app .  (. is mandatory=>current dir)
+Check UR Docker Image by running a command: docker images
+Run the Command to execute the Application: docker run java-app
+
+assignment:
+Pull the mysql image from the docker hub. 
+Create a database in the image and a table of records with some amount of data in it.
+Create a Java App and using JDBC connect to the database in the Docker and read the data from the db
+Create a docker file to create the image in docker
+Run the Final App from the Docker. 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+    
